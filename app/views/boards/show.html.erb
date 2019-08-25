@@ -1,6 +1,7 @@
 <h1><%= @board.name %></h1>
 <ul>
   <%# Cannot figure out why the View Billbord link below won't work. Maybe using the wrong route? %>
+  <%# I also tried to run a loop to have the artists disply here but kept getting a syntax error that I couldn't figure out %>
 <%# link_to "View Billboard", board_artist_path(@board, @artist) %>
 <li><%= link_to "Edit Billboard", edit_board_path %></li>
 <li><%= link_to "Delete Billboard", @board, method: :delete %></li>
