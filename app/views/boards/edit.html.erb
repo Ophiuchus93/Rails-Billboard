@@ -1,0 +1,10 @@
+<h1>Edit Billboards</h1>
+<%= form_for @board do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+  </br>
+  <%= link_to "Back", boards_path %>
+<% end %>
+

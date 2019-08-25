@@ -1,0 +1,5 @@
+<h1>Edit Artist</h1>
+<%# The code below is to render the form, and then pass the data into the corresponding array %>
+<%= render "form", board: @board, artist: @artist %>
+<br/>
+<%= link_to "Back", board_artists_path(@board) %>

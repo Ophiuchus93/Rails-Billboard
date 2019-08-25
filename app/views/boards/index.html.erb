@@ -1,0 +1,15 @@
+<h1>Billboards Top Music</h1>
+<h3>Click a link to view Billboards</h3>
+<ul>
+<% @boards.each do |board| %>
+<li><%= link_to board.name, board_path(board) %></li>
+<% end %>
+</ul>
+
+<%= link_to "New Billboard", new_board_path %>
+
+
+
+
+
+

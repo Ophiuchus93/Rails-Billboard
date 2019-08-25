@@ -1,0 +1,10 @@
+<h1><%= @board.name %></h1>
+<ul>
+<% @artists.each do |artist| %>
+<%= artist.name %>
+<% end %>
+<li><%= link_to "Edit Billboard", edit_board_path %></li>
+<li><%= link_to "Delete Billboard", @board, method: :delete %></li>
+<li><%= link_to "Add Artist", new_board_artist_path(@board) %></li>
+<li><%= link_to "Back", boards_path %></li>
+</ul>

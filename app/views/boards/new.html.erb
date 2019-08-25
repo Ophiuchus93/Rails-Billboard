@@ -1,0 +1,9 @@
+<h1>Add New Billboard</h1>
+<%= form_for @board do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<% end %>  
+<%= link_to "Back", boards_path %>
+
